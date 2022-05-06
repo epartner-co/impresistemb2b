@@ -1,0 +1,70 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  background-color: #ffffff;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+
+/*------------------------------------------*/
+/* phone vitrinas                          */
+/*----------------------------------------*/
+.slideChildrenContainer--carousel--phone{
+  border: 1px solid #000;
+  width: 208px;
+  margin-left: 4%;
+}
+
+/*-------------------------------------*/
+
+
+/*------------------------------------------*/
+/* Slider principal                        */
+/*----------------------------------------*/
+.paginationDotsContainer.paginationDotsContainer--carousel {
+  /*display: none;*/
+  margin: 35px;
+}
+
+.paginationDot.paginationDot--carousel.paginationDot--isActive.paginationDot--carousel--isActive {
+  background-color: #fec236;
+  border-radius: 4px;
+  padding: 0px 31px 4px;
+}
+
+.paginationDot.paginationDot--carousel {
+  border-radius: 4px;
+  padding: 0px 6px 11px;
+}
+/*-------------------------------------*/
+
+
+/*------------------------------------------*/
+/* phone vitrinas                          */
+/*----------------------------------------*/
+.flexRow--images-nuestras-marcas-b {
+  padding: 0 0px 5%;
+}
+/*-------------------------------------*/
+

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "flex-layout.row#header-top": {
+    "props": {
+      "blockClass": ["Header-top"]
+    },
+    "children": [
+      "rich-text#top-text",
+      "rich-text#top-text1"
+    ]
+  },
+  // * Static message
+  "rich-text#top-text1": {
+    "props": {
+      "blockClass": ["Header-top-text"],
+      "text": "10% DCTO en articulos Acer | CLICK AQUI*"
+    }
+  },
+   // * Static message
+   "rich-text#top-text": {
+    "props": {
+      "blockClass": ["Header-top-text"],
+      "text": "**Trabaje con nosotros** | Politica de tratamiento de datos"
+    }
+  }
+}

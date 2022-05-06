@@ -1,0 +1,197 @@
+{
+  "store.home": {
+    "blocks": [
+      /*componentes generales*/
+      "slider-layout#home__first-slider-images",
+
+      //Slider de marcas
+      "responsive-layout.desktop#flex-layout.row--home__nuestras--marcas",
+      "responsive-layout.desktop#flex-layout.row-nuestras-marcas-b",
+
+      /*componentes desktop*/
+      "responsive-layout.desktop#flex-layout.row--product__tabs",
+      "responsive-layout.desktop#flex-layout.row--Ir--a--laptops",
+      "responsive-layout.desktop#flex-layout.row--home__first--collage--imagenes",
+      "responsive-layout.desktop#flex-layout.row--home__second--collage--imagenes",
+      "rich-text#title--productos--destacados",
+      "rich-text#productos_preferidos_mejor_precio",
+      "flex-layout.row#Shelf-destacados",
+      //"responsive-layout.desktop#flex-layout.row--home__second-slider-images",
+      "responsive-layout.desktop#flex-layout.row--home__tercer-collage--imagenes",
+      "responsive-layout.desktop#flex-layout.descubre-nuestros-productos",
+      "responsive-layout.desktop#flex-layout.descubre-la-laptop-ideal",
+
+
+       /*componentes desktop*/
+       //"responsive-layout.desktop#flex-layout.row--home__second--info--card",
+       //"responsive-layout.desktop#flex-layout.row--home__third--info--card",
+       "rich-text#title--productos--+vendidos",
+       "flex-layout.row#Shelf-destacados",
+       //"responsive-layout.desktop#flex-layout.row--home__second2-slider-images",
+       "responsive-layout.desktop#flex-layout.row--home__third-slider-images",
+
+
+      /*componentes desktop*/
+      /*componentes phone*/
+      "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--product__tabs",
+      "responsive-layout.phone#flex-layout.row--home__first--collage--imagenes",
+      "responsive-layout.phone#flex-layout.row--home__second--collage--imagenes",
+      "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--home__second-slider-images",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      "responsive-layout.phone#flex-layout.row--home__tercer-collage--imagenes",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      "responsive-layout.phone#flex-layout.row--home__nuestras--marcas",
+      "responsive-layout.phone#flex-layout.row--home__espacio",
+      "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--home__second-slider-images",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      "responsive-layout.phone#flex-layout.row--home__third-slider-images",
+
+      /*componentes generales*/
+
+      //Trigger Modal
+      "modal-trigger#trigger_modal_popUp"
+    ]
+  },
+
+  /*componentes generales que se pueden repetir en ambas vistas (desktop y phone)*/
+
+  /*primer slider*/
+  "slider-layout#home__first-slider-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children":[
+      "info-card#home__fist--layout",
+      "image#home__second--layout",
+      "image#home__thirt--layout"
+    ]
+  },
+  "info-card#home__fist--layout": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "imageUrl": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+      "headline": "LAPTOPS SALE",
+      "callToActionText": "EXPLORAR AHORA",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass":["home--first--image--first--layout--firs--slayout", "explorar-ahora"]
+    }
+  },
+  "image#home__second--layout":{
+    "props": {
+      "src": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png"
+    }
+  },
+  "image#home__thirt--layout":{
+    "props": {
+      "src": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png"
+    }
+  },
+
+  /*texto parte tabs...como se repite en ambos...se deja aca*/
+  "rich-text#tabs__content--impresoras":{
+    "props":{
+      "text":"impresoras..."
+    }
+  },
+  "rich-text#tabs__content--celulares":{
+    "props":{
+      "text":"celulares..."
+    }
+  },
+  "rich-text#tabs__content--tablets":{
+    "props":{
+      "text":"tablets..."
+    }
+  },
+
+  /*imagen computador...como se repite...se deja aca*/
+  "image#second--computer":{
+    "props":{
+      "src": "https://asyco.co/wp-content/uploads/2021/03/asus03.jpg"
+    }
+  },
+
+  /*texto computador...como se repite...se deja aca*/
+  "rich-text#first--computer--text":{
+    "props":{
+      "text":"Computador portatil ASUS (13.3,Intel)  \n Laptop 2 en 1 con tecnologia intel Eco \n opcional, IA y seguridad biometrica"
+    }
+  },
+  "rich-text#titleVitrina":{
+    "props":{
+      "blockClass":"titleVitrina",
+      "text":"Computador portatil ASUS (13.3,Intel)"
+    }
+  },
+  "rich-text#descriptionVitrina":{
+    "props":{
+      "blockClass":"descriptionVitrina",
+      "text":"Laptop 2 en 1 con tecnologia intel Eco opcional, IA y seguridad biometrica"
+    }
+  },
+
+  "rich-text#nuestras--marcas": {
+    "props": {
+      "text": "NUESTRAS MARCAS",
+      "blockClass": "nuestras--marcas"
+    }
+  },
+
+  "rich-text#home__lo--ultimo--de--impresistem": {
+    "props": {
+      "text": "## LO ULTIMO QUE IMPRESISTEM TIENE PARA TI",
+      "blockClass": ["nuestras--marcas", "impre-tiene-para-ti"]
+    }
+  },
+
+  //Texto de ultimas noticias
+  "rich-text#ultimas-noticias": {
+    "props": {
+      "text": "Actualizate de las últimas noticias que tenemos para ti",
+      "blockClass": ["nuestras--marcas", "impre-tiene-para-ti"]
+    }
+  },
+
+  "modal-trigger#trigger_modal_popUp": {
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    },
+    "children":[
+      "modal-layout#modal_popUp"
+    ]
+  },
+  "modal-layout#modal_popUp": {
+    "children": [
+      //"image#closePopUp",
+      "image#imagenPopUp"
+    ]
+  },
+  "image#closePopUp": {
+    "props": {
+      "blockClass": "img-closePopUp"
+      //"src": "assets/img/cerrar.png"
+    }
+  },
+  "image#imagenPopUp": {
+    "props": {
+      "src": "assets/img/popup-mobile.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.google.com" //Aqui el enlace del PopUp
+      }
+    }
+  }
+}

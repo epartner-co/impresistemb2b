@@ -1,0 +1,167 @@
+{
+  "product-summary.shelf#HomeVitrinas": {
+    "props": {
+      "blockClass": [
+        "ProductShelf",
+        "ProductShelfHome"
+      ]
+    },
+    "children": [
+      "flex-layout.row#imageVitrina",
+      "product-summary-name",
+      "flex-layout.row#ProductShelfHome",
+      "flex-layout.row#price_and_cart"
+    ]
+  },
+
+  "flex-layout.row#imageVitrina": {
+    "children":["product-summary-image"],
+    "props":{
+      "blockClass": "imageVitrina"
+    }
+  },
+
+  // Se introducen el precio y el carrito de compras en un contenedor para poder posicionarlos
+  "flex-layout.row#price_and_cart":{
+    "children":[
+      "flex-layout.col#priceContainer",
+      "flex-layout.col#cartContainer"
+    ],
+    "props":{
+      "blockClass": "style-price-and-cart"
+    }
+  },
+  "flex-layout.col#priceContainer":{
+    "children":[
+      "product-selling-price"
+    ],
+    "props":{
+      "width": "75%"
+    }
+  },
+  "flex-layout.col#cartContainer":{
+    "children":[
+      "add-to-cart-button#ProductShelfHome"
+    ],
+    "props":{
+      "width": "25%",
+      "blockClass":"buycolection"
+    }
+  },
+
+  "flex-layout.row#ProductShelfHome": {
+    "props": {
+      "blockClass": [
+        "ProductShelfHome",
+        "ProductShelfHome"
+      ]
+    },
+    "children": [
+      "product-list-price",
+      "product-price-savings"
+    ]
+  },
+
+  // * Add to cart Button
+  "add-to-cart-button#ProductShelfHome": {
+    "props": {
+      "blockClass": "botonvitrina",
+      "text": " "
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      // "flex-layout.col#productRating",
+      // "product-summary-space",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
+      "add-to-cart-button#summary"
+    ]
+  },
+
+  "flex-layout.col#productRating": {
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": ["product-rating-inline"]
+  },
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf", // ? Image
+      "vtex.product-highlights@2.x:product-highlights#collection", // ? Flags
+      "modal-trigger#quickview" // ? Check quickview.jsonc
+    ]
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price#summary",
+      "product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "blockClass": "summary",
+      "percentageStyle":["compact"]
+    }
+  },
+
+  "add-to-cart-button#summary": {
+    "props": {
+      "blockClass": ["summary", "fondoBotonCategory"],
+      "text": "Agregar"
+    }
+  }
+}
